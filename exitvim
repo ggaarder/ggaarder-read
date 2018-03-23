@@ -1,0 +1,87 @@
+Stack Overflow: Helping One Million Developers Exit Vim
+
+Category: Data Science Report
+
+stackoverflow.blog/2017/05/23/stack-overflow-helping-one-million-developers-exit-vim/index.html
+
+by David Robinson on May 23, 2017
+
+https://stackoverflow.blog/authors/drobinson/
+
+This morning, a popular Stack Overflow question hit a major milestone: https://stackoverflow.com/questions/11828270/how-to-exit-the-vim-editor
+
+(P1: the question)
+
+You’re not alone, jclancy. In the five years since this question was asked, there have been over a million other developers who got stuck in Vim and couldn’t escape without a bit of help. Indeed, the difficulty of quitting the Vim editor is a common joke among developers.
+
+(P2: Photoshop-ed O'RLY Book Exiting Vim Eventually)
+
+(P3: a amusing pic)
+
+I’ve been told by experienced Vim users that this reputation is unfair, and I’m sure they’re right (even I’ve gotten the hang of it in the last few years). I think there are two reasons it’s easy to forget how to exit Vim: developers are often dropped into Vim from a git command or another situation where they didn’t expect to be, and they run into it infrequently enough to forget how they solved it last time.
+
+In honor of this milestone, we decided to take a look at the data surrounding this question. In particular, we’ll try measuring who is most likely to get stuck in Vim as opposed to using it intentionally, and examining how that balance varies by country and by programming language.
+
+## How many people have been struggling to exit Vim?
+
+In the last year, How to exit the Vim editor has made up about .005% of question traffic: that is, one out of every 20,000 visits to Stack Overflow questions. That means during peak traffic hours on weekdays, there are about 80 people per hour that need help getting out of Vim.
+
+Has the percentage of traffic it makes up changed over time? That is, have developers started learning to exit Vim on their own?
+
+(P4: % of Stack Overflow traffic going to 'How to exit Vim', by time)
+
+It doesn’t look like it. The question was asked in August 2012, and for a few months it got very little traffic. Then it began growing in the following two years, presumably as more sources linked to it online and it moved to the top of search engine results. It’s been relatively steady for the last two years. This doesn’t necessarily mean the same people visited it again and again, of course; it could represent relatively new programmers getting stuck in Vim for the first time.
+
+## Differences across countries
+
+As we saw in a previous blog post, we can use Stack Overflow traffic to learn a lot about the geographical distribution of developers.
+
+Let’s consider what percentage of visits to Vim this question comprises within each country. In countries with a lot of experienced Vim users, we’d expect this percentage to be low. When it’s high, it indicates many users got stuck in Vim when they didn’t necessarily expect to.
+
+(P5: % of Vim Traffic going to 'How to exit Vim', by countries)
+
+It looks like developers in Ukraine, Turkey and Indonesia are getting stuck in Vim quite a bit: it makes up a larger portion of their Vim questions than in any other country. In contrast, in China, Korea and Japan the fraction going to this question is one-tenth as much. That might indicate that when developers in these countries enter Vim, they usually meant to do so, and they know how to get out of it.
+
+## What kind of programmers get stuck in Vim?
+
+It’s also likely that users of different programming languages will have different experiences with Vim. We can investigate this by stratifying the “Exit Vim / Total Vim” percentage across each user’s main programming technology.
+
+We’ll define this based on what Stack Overflow tag they visit most often. (For instance, my most visited tag is R: it makes up 52% of my question views). It’s not a perfect measure, but it’s reliable enough to give a sense of the breakdown by language. (For this analysis, we considered only registered users with at least 100 visits to the site).
+
+(P6: % of the user's Vim visits that go to 'How to exit Vim')
+
+The developers who are most likely to get stuck in Vim are front-end web developers: those who primarily visit tags like JQuery, CSS, and AngularJS. They’re followed by Microsoft developers (C# and SQL Server) and mobile (Android and iOS). These developers usually work with an IDE (Visual Studio, Eclipse, Xcode, and so on), rather than a plain text editor, so it makes sense that they’re relatively more likely to get “stuck” in Vim rather than to open it intentionally.
+
+The developers least likely to get stuck in Vim are those who program in C, C++, Python and Ruby. These languages make sense to me: they are a combination of low-level languages and scripting languages that are often used with a plain text editor rather than an IDE, so they have the experience to escape it without a Google search.
+
+## Conclusion
+
+I was amused when I saw this question approach a million visits, but I was also proud that I work for, and contribute answers to, a site that helps so many developers. You never know when an answer you contribute could help millions of people, whether it shares how to undo a git commit or how the yield keyword in Python works.
+
+If you want to contribute yourself, we encourage you to join the world’s largest developer community, whether it’s to ask and answer questions, get your next job, or build your online presence with a Developer Story. You can also use tools like Stack Overflow Trends to learn more about what our data can tell you about software developers.
+
+In any case, next time you solve your problem through Stack Overflow, remember the hundreds of thousands of users who regularly ask, answer, edit, and moderate the site to make it all possible.
+
+## Author
+
+David Robinson
+
+Data Scientist
+
+Author Archives: https://stackoverflow.blog/authors/drobinson/
+
+Website: http://varianceexplained.org/
+
+Twitter: https://twitter.com/drob
+
+Github: https://github.com/dgrtwo
+
+--------------------------------------------------------------------------------
+
+## Comments
+
+- Jon says:
+
+May 24, 2017 at 1:44 pm
+
+Yet again the data scientists pulling information no one gives a sh** about.
